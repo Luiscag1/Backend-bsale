@@ -1,7 +1,36 @@
-import { Injectable } from '@nestjs/common';
+// import { Injectable, Inject } from '@nestjs/common';
+// import { Repository } from 'typeorm';
+// import { Photo } from './photo.entity';
+
+// @Injectable()
+// export class PhotoService {
+//   constructor(
+//     @Inject('PHOTO_REPOSITORY')
+//     private photoRepository: Repository<Photo>,
+//   ) {}
+
+//   async findAll(): Promise<Photo[]> {
+//     return this.photoRepository.find();
+//   }
+// }
+
+
+
+
+
+
+
+import { Injectable} from '@nestjs/common';
 let db = [{id:1, product:'Zapato', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:2, product:'Ropa', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:3, product:'Lentes', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:4, product:'Rueda', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:5, product:'Collar', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:6, product:'Play', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:7, product:'Televisor', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:8, product:'Platos', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}, {id:9, product:'Medias', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg/1200px-Museo_del_Bicentenario_-_Zapatos_de_N%C3%A9stor_Kirchner.jpg'}]
+
 @Injectable()
 export class AppService {
+
+  
+      
+       
+
+
   getHello(): string {
     return 'Hello World!';
   }

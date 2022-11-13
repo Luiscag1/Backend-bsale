@@ -7,12 +7,12 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-@Get('/products')
-getProductLIst(@Query() params:any){
-  console.log('muestra otra cosa')
-  return this.appService.FindProductsList(params)
+// @Get('/products')
+// getProductLIst(@Query() params:any){
+//   console.log('muestra otra cosa')
+//   return this.appService.FindProductsList(params)
 
-}
+// }
 
 
 
